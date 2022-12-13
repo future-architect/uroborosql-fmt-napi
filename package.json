@@ -23,7 +23,6 @@
   },
   "scripts": {
     "artifacts": "napi artifacts",
-    "postinstall": "npm run build",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",

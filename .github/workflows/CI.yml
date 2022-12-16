@@ -54,8 +54,7 @@ jobs:
           - host: macos-latest
             target: aarch64-apple-darwin
             build: |
-              sudo rm -r /Library/Developer/CommandLineTools
-              xcode-select --install
+              sudo rm -Rf /Library/Developer/CommandLineTools/SDKs/*;
               export CC=$(xcrun -f clang);
               export CXX=$(xcrun -f clang++);
               SYSROOT=$(xcrun --sdk macosx --show-sdk-path);

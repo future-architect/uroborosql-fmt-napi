@@ -37,7 +37,7 @@ jobs:
             build: |
               git config --system core.longpaths true
               yarn build --target i686-pc-windows-msvc
-              yarn test
+            # yarn test
             target: i686-pc-windows-msvc
           - host: ubuntu-latest
             target: x86_64-unknown-linux-gnu

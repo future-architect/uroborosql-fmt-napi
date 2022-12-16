@@ -13,4 +13,11 @@ WHERE JPN_STD.sportId = (SELECT           sportId   FROM
 JPN_STD.ID  = SBJ.ID            AND SBJ.grade   > 
         /*grade*/50     --成績が50点以上    
 `;
-console.log(runfmt(target));
+
+let result;
+try {
+  result = runfmt(target);
+  console.log(target);
+} catch (e) {
+  console.error(e);
+}

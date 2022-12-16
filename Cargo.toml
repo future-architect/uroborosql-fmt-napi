@@ -14,7 +14,7 @@ itertools = "0.10.3"
 tree-sitter = "0.19.3"
 
 # git config --global core.longpaths true を管理者権限で実行しないといけない
-tree-sitter-sql = {git = "https://github.com/m-novikov/tree-sitter-sql"}
+# tree-sitter-sql = {git = "https://github.com/m-novikov/tree-sitter-sql"}
 uroborosql-fmt = {git = "https://github.com/future-architect/uroborosql-fmt"}
 
 

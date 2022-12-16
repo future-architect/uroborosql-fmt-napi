@@ -50,7 +50,7 @@ jobs:
             target: x86_64-unknown-linux-musl
             docker: ghcr.io/napi-rs/napi-rs/nodejs-rust:lts-alpine
             build: |
-              set -e && apt install musl-tools && yarn build && strip *.node
+              set -e && sudo apt-get install musl-tools && yarn build && strip *.node
           - host: macos-latest
             target: aarch64-apple-darwin
             build: |
